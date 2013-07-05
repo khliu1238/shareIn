@@ -1,4 +1,6 @@
 # Django settings for shareIn project.
+import os
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -11,8 +13,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'C:/Users/kenliu/My Documents/Django/shareIn/sqlite3.db',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -121,7 +123,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
+    'selenium_tests'
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
