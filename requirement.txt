@@ -1,0 +1,14 @@
+Django==1.5.1
+Fabric==1.6.1
+colorama==0.2.5
+coverage==3.6
+django-jenkins==0.14.0
+django-polls==0.1
+django-selenium==0.9.6
+logilab-astng==0.24.3
+logilab-common==0.59.1
+paramiko==1.10.1
+pylint==0.28.0
+selenium==2.33.0
+south==0.7.6
+virtualenv==1.9.1
