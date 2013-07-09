@@ -46,4 +46,4 @@ class Auth(SeleniumTestCase):
         # Again, after submiting the form, we'll use the find_css helper
         # method and pass as a CSS selector, an id that will only exist
         # on the index page and not the login page
-        self.wd.find_css("#content-main")
+        self.wd.find_css(".dashboard")
