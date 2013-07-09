@@ -38,7 +38,7 @@ class Auth(SeleniumTestCase):
         self.wd.find_css('#id_username').send_keys("admin")
         # for the password, we can now just call find_css since we know the page
         # has been rendered
-        self.wd.find_css("#id_password").send_keys('pw')
+        self.wd.find_css("#id_password").send_keys('p')
         # You're not limited to CSS selectors only, check
         # http://seleniumhq.org/docs/03_webdriver.html for 
         # a more compreehensive documentation.
