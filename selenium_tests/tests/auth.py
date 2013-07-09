@@ -28,6 +28,7 @@ class Auth(SeleniumTestCase):
         Django Admin login test
         """
         # Open the admin index page
+        
         self.open(reverse('admin:index'))
 
         # Selenium knows it has to wait for page loads (except for AJAX requests)
