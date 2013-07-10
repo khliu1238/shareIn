@@ -27,6 +27,7 @@ class Auth(SeleniumTestCase):
         """
         Django Admin login test
         """
+        
         # Open the admin index page
         self.open(reverse('admin:index'))
 
