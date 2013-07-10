@@ -2,7 +2,7 @@
 import os
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -14,7 +14,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/ec2-user/ENV/shareIn/sqlite3.db',                      # Or path to database file if using sqlite3.
+        'NAME': 'C:/Users/kenliu/My Documents/Django/shareIn/sqlite3.db',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
-TIME_ZONE = 'Asia/Taipei'
+TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -159,8 +159,3 @@ LOGGING = {
         },
     }
 }
-
-
-if os.environ.get('DEVELOPMENT', None):
-    print 'import dev: '
-    from settings_dev import *
